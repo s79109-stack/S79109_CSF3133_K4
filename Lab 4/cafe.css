@@ -1,0 +1,217 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #FDEBD0;
+}
+
+h1 {
+    margin: 0;
+    color: #1A5276;
+    text-decoration: none;
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #1A5276;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+/* Navigation links */
+nav a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #1A5276;
+}
+
+/* Navigation hover effect */
+nav a:hover {
+    color: white;
+    background-color: #E67E22;
+}
+
+/* Link states */
+a:link {
+    color: #1A5276;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/* Main content */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section styling */
+section {
+    margin-bottom: 32px;
+}
+
+h2 {
+    color: #1A5276;
+}
+
+p {
+    color: #333333;
+    text-align: justify;
+}
+
+/* Introduction paragraph */
+.intro {
+    font-style: italic;
+}
+
+/* Menu item styling */
+article {
+    padding: 12px;
+    margin: 12px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Old price */
+.old-price {
+    text-decoration: line-through;
+    color: #666666;
+    margin-right: 8px;
+}
+
+/* New promotional price */
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+}
+
+/* Video styling */
+figure {
+    margin: 0;
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video caption */
+figcaption {
+    margin-top: 8px;
+    color: #555555;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Feedback form styling */
+.feedback-form {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #F8F9F9;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.feedback-form p {
+    margin: 12px 0;
+}
+
+/* Form labels */
+.feedback-form label {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+/* Name and email input */
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 100%;
+    padding: 9px;
+    margin-top: 5px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+}
+
+/* Radio and checkbox fieldsets */
+.feedback-form fieldset {
+    margin: 16px 0;
+    padding: 12px;
+    border: 1px solid #cccccc;
+}
+
+/* Submit button */
+.feedback-form button {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: #1A5276;
+    cursor: pointer;
+}
+
+/* Button hover */
+.feedback-form button:hover {
+    background-color: #E67E22;
+}
+
+/* Footer styling */
+footer {
+    padding: 18px;
+    text-align: center;
+    background-color: #FDEBD0;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer address {
+    font-style: normal;
+}
+
+/* Responsive navigation for mobile */
+@media (max-width: 600px) {
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 14px;
+    }
+
+}

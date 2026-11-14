@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Viewport for responsive webpage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e-Café Campus</title>
+
+    <!-- Link external CSS -->
+    <link rel="stylesheet" href="cafe.css">
+</head>
+
+<body>
+
+    <!-- Errors found and corrected:
+         Error 1: Missing viewport meta tag.
+         Error 2: Incorrect Menu link. Changed to href="#menu".
+         Error 3: Incorrect CSS selector #intro. Changed to .intro.
+         Error 4: Incorrect highlight selector. Changed to .highlight.
+         Error 5: Invalid text-decoration value "overlined".
+         Error 6: Missing controls attribute in video.
+         Error 7: Navigation list needed styling to remove bullets.
+         Error 8: CSS moved to an external stylesheet.
+    -->
+
+    <!-- Header section -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Menu section -->
+        <section id="menu">
+
+            <h2>Today's Menu</h2>
+
+            <p class="intro">
+                Freshly brewed coffee and local delights every day.
+            </p>
+
+            <!-- First menu item -->
+            <article id="item">
+                <h3>Kopi Tarik</h3>
+
+                <p>
+                    <span class="old-price">RM 4.50</span>
+                    <span class="highlight">RM 3.50</span>
+                </p>
+            </article>
+
+            <!-- Second menu item -->
+            <article id="item">
+                <h3>Nasi Lemak</h3>
+
+                <p>
+                    <span class="old-price">RM 6.00</span>
+                    <span class="highlight">RM 5.00</span>
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Video section -->
+        <section id="video">
+
+            <h2>Watch Our Story</h2>
+
+            <figure>
+                <video controls width="400">
+                    <source src="cafe.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <figcaption>
+                    Discover the food and drinks at e-Café Campus.
+                </figcaption>
+            </figure>
+
+        </section>
+
+        <!-- Feedback form section -->
+        <section id="feedback">
+
+            <h2>Customer Feedback</h2>
+
+            <form class="feedback-form" action="#" method="post">
+
+                <!-- Name -->
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <!-- Email -->
+                <p>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <!-- Visit type -->
+                <fieldset>
+                    <legend>Visit Type:</legend>
+
+                    <label>
+                        <input type="radio" name="visit" value="dine-in" required>
+                        Dine-in
+                    </label>
+
+                    <label>
+                        <input type="radio" name="visit" value="take-away">
+                        Take-away
+                    </label>
+                </fieldset>
+
+                <!-- Favourite items -->
+                <fieldset>
+                    <legend>Favourite Items:</legend>
+
+                    <label>
+                        <input type="checkbox" name="favourite" value="coffee">
+                        Coffee
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="favourite" value="tea">
+                        Tea
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="favourite" value="nasi-lemak">
+                        Nasi Lemak
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="favourite" value="kuih">
+                        Local Kuih
+                    </label>
+
+                </fieldset>
+
+                <!-- Submit button -->
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer id="contact">
+
+        <p>&copy; 2026 e-Café Campus</p>
+
+        <!-- Email address -->
+        <address>
+            Contact us:
+            <a href="mailto:ecafecampus@example.com">
+                ecafecampus@example.com
+            </a>
+        </address>
+
+    </footer>
+
+</body>
+</html>
