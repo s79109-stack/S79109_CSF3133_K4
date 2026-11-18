@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Campus Bookstore</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="shop.css">
+</head>
+
+<!--
+ERROR LIST - ORIGINAL CODE
+
+1. HTML Line 8: Incorrect rel value "stylesheets".
+   Correct value is "stylesheet".
+
+2. HTML Line 14: Navigation list was not placed
+   inside a <nav> element.
+
+3. HTML Line 18: The title was not placed
+   inside a <header> element.
+
+4. HTML Line 19: The paragraph was outside
+   the <main> element.
+
+5. HTML Line 20: Table ID was "product" but
+   CSS used "#products".
+
+6. CSS Line 4: "no repeat" is incorrect.
+   Correct value is "no-repeat".
+
+7. CSS Line 18: Navigation link used inline
+   instead of block display.
+
+8. CSS Line 27: "border-collapse: collapsed"
+   is invalid. Correct value is collapse.
+
+9. CSS Line 26-29: CSS table selector did not
+   match the original HTML table ID.
+
+10. CSS Line 34: nth-child(2) only selects
+    the second row, not all even rows.
+
+11. CSS Line 45: Missing semicolon after
+    background-color declaration.
+-->
+
+<!-- Header -->
+<header id="home">
+    <h1>Campus Bookstore</h1>
+    <p>Textbooks, stationery and more for every student.</p>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content -->
+<main>
+
+    <section id="books">
+
+        <h2>Our Products</h2>
+
+        <p>
+            Welcome to Campus Bookstore! We provide
+            affordable textbooks, stationery and
+            essential study materials for every student.
+        </p>
+
+        <!-- Product Table -->
+        <table id="products">
+
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Category</th>
+                    <th>Price (RM)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Web Design Basics</td>
+                    <td>Textbook</td>
+                    <td class="price">45.00</td>
+                </tr>
+
+                <tr>
+                    <td>A4 Notebook</td>
+                    <td>Stationery</td>
+                    <td class="price">6.50</td>
+                </tr>
+
+                <tr>
+                    <td>USB Drive 32GB</td>
+                    <td>Gadget</td>
+                    <td class="price">25.00</td>
+                </tr>
+
+                <tr>
+                    <td>Highlighter Set</td>
+                    <td>Stationery</td>
+                    <td class="price">9.90</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer id="contact">
+    <p>&copy; 2026 Campus Bookstore</p>
+    <p>Contact: campusbookstore@gmail.com</p>
+</footer>
