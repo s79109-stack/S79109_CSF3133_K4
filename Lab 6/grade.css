@@ -1,0 +1,79 @@
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 30px;
+}
+
+/* Main heading */
+h2 {
+    color: #333333;
+}
+
+/* Form container */
+form {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    width: 350px;
+}
+
+/* Input styling */
+input {
+    padding: 5px;
+    margin-top: 5px;
+    width: 180px;
+}
+
+/* Button styling */
+button {
+    background-color: #2878a8;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #174e70;
+}
+
+/* Result styling */
+#result {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Date and time styling */
+#checkTime {
+    font-size: 14px;
+    color: #555555;
+}
+
+/* Grade table styling */
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 250px;
+}
+
+/* Table border and padding */
+table, th, td {
+    border: 1px solid #333333;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Table header background */
+th {
+    background-color: #2878a8;
+    color: white;
+}
+
+/* Table row background */
+td {
+    background-color: white;
+}
